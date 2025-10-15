@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- METADATES -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TITLE -->
+    <title>CSS GRID</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/grid_base.css" />
+    <link rel="stylesheet" href="./css/grid_menu.css" />
+    <link rel="stylesheet" href="./css/full_bleed.css" />
+    <link rel="stylesheet" href="./css/six_cards.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+  </head>
+
+  <body class="page">
+    <button class="menu-toggle">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+
+    <div class="overlay"></div>
+    <!-- NAV / MENU -->
+    <nav class="sidebar">
+      <ul class="menu">
+        <li>
+          <button data-target="section-fullbleed">
+            <ion-icon name="file-tray-full-outline"></ion-icon>Full Bleed
+          </button>
+        </li>
+        <li>
+          <button data-target="section-cards">
+            <ion-icon name="id-card-outline"></ion-icon>Cards
+          </button>
+        </li>
+        <li>
+          <button data-target="section-gallery">
+            <ion-icon name="images-outline"></ion-icon>Gallery
+          </button>
+        </li>
+      </ul>
+      <div class="sidebar-footer">
+        <a href="./pages/grid.html" class="sidebar-btn back-btn">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+          <span>Volver</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <!-- FULL BLEED SECTION -->
+      <section id="section-fullbleed" class="section active">
+        <div class="fullbleed-content">
+          <h2>Diseño Full Bleed</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            hic?Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Distinctio ut, autem veritatis sed et dicta quod fugit modi
+            exercitationem eveniet.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            hic?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            cumque impedit provident dicta tenetur sint cum asperiores adipisci?
+            Dicta, voluptatem.
+          </p>
+          <img src="https://picsum.photos/900/400" alt="Imagen de ejemplo" />
+        </div>
+      </section>
+
+      <!-- CARDS SECTION -->
+      <section id="section-cards" class="section">
+        <h2>Tarjetas Destacadas</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <img
+              src="https://picsum.photos/600/600"
+              alt="Fondo de tarjeta 1"
+              class="card-background-img"
+            />
+            <ion-icon name="person-outline" class="card-icon"></ion-icon>
+            <div class="card-features">
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+            </div>
+            <button class="btn card-button">Ver mas</button>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://picsum.photos/900/500"
+              alt="Fondo de tarjeta 2"
+              class="card-background-img"
+            />
+
+            <ion-icon name="person-outline" class="card-icon"></ion-icon>
+            <div class="card-features">
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+            </div>
+            <button class="btn card-button">Ver mas</button>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://picsum.photos/400/200"
+              alt="Fondo de tarjeta 3"
+              class="card-background-img"
+            />
+
+            <ion-icon name="person-outline" class="card-icon"></ion-icon>
+            <div class="card-features">
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+            </div>
+            <button class="btn card-button">Ver mas</button>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://picsum.photos/500/100"
+              alt="Fondo de tarjeta 4"
+              class="card-background-img"
+            />
+
+            <ion-icon name="person-outline" class="card-icon"></ion-icon>
+            <div class="card-features">
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+            </div>
+            <button class="btn card-button">Ver mas</button>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://picsum.photos/700/400"
+              alt="Fondo de tarjeta 5"
+              class="card-background-img"
+            />
+
+            <ion-icon name="person-outline" class="card-icon"></ion-icon>
+            <div class="card-features">
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+            </div>
+            <button class="btn card-button">Ver mas</button>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://picsum.photos/600/300"
+              alt="Fondo de tarjeta 6"
+              class="card-background-img"
+            />
+
+            <ion-icon name="person-outline" class="card-icon"></ion-icon>
+            <div class="card-features">
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+              <div class="card-feature">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="feature-icon"
+                ></ion-icon>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, doloremque!
+                </p>
+              </div>
+            </div>
+            <button class="btn card-button">Ver mas</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- GALLERY SECTION -->
+      <section id="section-gallery" class="section gallery">
+        <h2>Galería de Imágenes</h2>
+        <div>
+          <img src="https://picsum.photos/seed/1/400/600" alt="Imagen 1" />
+          <img src="https://picsum.photos/seed/2/600/400" alt="Imagen 2" />
+          <img src="https://picsum.photos/seed/3/400" alt="Imagen 3" />
+          <img src="https://picsum.photos/seed/4/350/700" alt="Imagen 4" />
+          <img src="https://picsum.photos/seed/5/700/350" alt="Imagen 5" />
+          <img src="https://picsum.photos/seed/6/450/650" alt="Imagen 6" />
+          <img src="https://picsum.photos/seed/7/650/450" alt="Imagen 7" />
+          <img src="https://picsum.photos/seed/8/420" alt="Imagen 8" />
+          <img src="https://picsum.photos/seed/9/400/550" alt="Imagen 9" />
+          <img src="https://picsum.photos/seed/10/550/400" alt="Imagen 10" />
+          <img src="https://picsum.photos/seed/11/400/620" alt="Imagen 11" />
+          <img src="https://picsum.photos/seed/12/620/400" alt="Imagen 12" />
+          <img src="https://picsum.photos/seed/13/400" alt="Imagen 13" />
+          <img src="https://picsum.photos/seed/14/400/600" alt="Imagen 14" />
+          <img src="https://picsum.photos/seed/15/600/400" alt="Imagen 15" />
+          <img src="https://picsum.photos/seed/16/400" alt="Imagen 16" />
+          <img src="https://picsum.photos/seed/17/350/700" alt="Imagen 17" />
+          <img src="https://picsum.photos/seed/18/700/350" alt="Imagen 18" />
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-socials">
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+
+        <small>© 2025 Adrian Vargas | Todos los derechos reservados.</small>
+      </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="./js/grid.js"></script>
+
+    <!-- Ionic Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

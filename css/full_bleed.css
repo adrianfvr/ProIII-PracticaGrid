@@ -1,0 +1,109 @@
+/* SECTION FULL BLEED */
+.fullbleed-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  background: var(--surface-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-medium);
+}
+
+.fullbleed-content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* TEXTS */
+.fullbleed-content h2 {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.fullbleed-content p {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* IMG */
+.fullbleed-content img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  object-fit: cover;
+  transition: transform var(--transition-medium),
+    box-shadow var(--transition-medium);
+}
+
+.fullbleed-content:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(139, 94, 60, 0.2);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 900px) {
+  .fullbleed-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .fullbleed-content img {
+    order: -1;
+    margin-bottom: 1.5rem;
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
+  .fullbleed-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .fullbleed-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .fullbleed-content {
+    padding: 1.5rem 1rem 2.5rem;
+    gap: 1.25rem;
+    border-radius: var(--radius-md);
+  }
+
+  .fullbleed-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .fullbleed-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .fullbleed-content img {
+    max-width: 100%;
+    border-radius: var(--radius-md);
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .fullbleed-content {
+    padding: 1.25rem 0.75rem 2rem;
+  }
+
+  .fullbleed-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .fullbleed-content p {
+    font-size: 0.9rem;
+  }
+}
